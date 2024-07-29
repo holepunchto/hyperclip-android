@@ -1,0 +1,43 @@
+plugins {
+  id 'com.android.application'
+}
+
+android {
+  namespace 'to.holepunch.bare.android'
+  compileSdk 34
+  ndkVersion '27.0.11718014'
+
+  defaultConfig {
+    applicationId 'to.holepunch.bare.android'
+    minSdk 31
+    targetSdk 34
+    versionCode 1
+    versionName '1.0'
+
+    externalNativeBuild {
+      cmake {
+        targets 'bare_android'
+        arguments "-DCMAKE_MODULE_PATH=$System.env.CMAKE_MODULE_PATH"
+      }
+    }
+  }
+
+  buildTypes {
+    release {
+      signingConfig signingConfigs.debug
+    }
+  }
+
+  externalNativeBuild {
+    cmake {
+      version '3.25.0+'
+      path 'CMakeLists.txt'
+    }
+  }
+}
+
+dependencies {
+  implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+  implementation 'to.holepunch:bare-kit'
+}

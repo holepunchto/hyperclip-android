@@ -1,0 +1,11 @@
+.gradle/
+.cxx/
+.idea/
+build/
+node_modules/
+package-lock.json
+local.properties
+*.bundle
+*.bundle.h
+*.d
+.DS_Store
