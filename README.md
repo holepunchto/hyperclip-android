@@ -3,7 +3,7 @@
   
 Hyperclip is an example of embedding Bare in an Android application using <https://github.com/holepunchto/bare-kit>.  
   
-You need [Hyperclip-desktop](https://github.com/supersuryaansh/hyperclip-desktop) to send clipboard content from Desktop to Android.  
+You need [Hyperclip-desktop](https://github.com/holepuncto/hyperclip-desktop) to send clipboard content from Desktop to Android.  
   
 # Pre-requisites
 Android SDK API level: >=24
