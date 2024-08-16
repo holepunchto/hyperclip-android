@@ -26,8 +26,7 @@ fs.mkdirSync(dir);
 
 
 // Initialise Hyperswarm and Hypercore
-// Replace HYPERCLIP_DESKTOP_KEY with the key you got from hyperclip desktop app.
-// https://github.com/supersuryaansh/hyperclip-desktop
+// Replace HYPERCLIP_DESKTOP_KEY with the key you received from hyperclip desktop app.
 const swarm = new Hyperswarm()
 const core = new Hypercore(dir, "HYPERCLIP_DESKTOP_KEY")
 // Create RPC
